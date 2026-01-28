@@ -41,31 +41,33 @@ The API uses **JWT-based authentication** and ensures that users can access **on
 ## 📁 Project Structure
 
 
-src/
+Task-Management-REST-API/
 │
-├── server.js # Server entry point
-├── app.js # Express app configuration
+├── src/
+│   ├── server.js          # Server entry point
+│   ├── app.js             # Express app setup
+│   │
+│   ├── config/
+│   │   └── db.js           # MongoDB connection
+│   │
+│   ├── models/
+│   │   ├── User.js
+│   │   └── Task.js
+│   │
+│   ├── controllers/
+│   │   ├── auth.controller.js
+│   │   └── task.controller.js
+│   │
+│   ├── routes/
+│   │   ├── auth.routes.js
+│   │   └── task.routes.js
+│   │
+│   └── middleware/
+│       └── auth.middleware.js
 │
-├── config/
-│ └── db.js # MongoDB connection
-│
-├── models/
-│ ├── User.js # User schema
-│ └── Task.js # Task schema
-│
-├── controllers/
-│ ├── auth.controller.js
-│ └── task.controller.js
-│
-├── routes/
-│ ├── auth.routes.js
-│ └── task.routes.js
-│
-├── middleware/
-│ └── auth.middleware.js
-│
-└── .env # Environment variables
-
+├── .env        ✅ HERE (root)
+├── package.json
+├── node_modules/
 
 
 ---
