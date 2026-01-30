@@ -100,11 +100,4 @@ Task-Management-REST-API/
 #### Register User
 
 
-Request Body:
-```json
-{
-  "name": "User Name",
-  "email": "user@test.com",
-  "password": "123456"
-}
 
